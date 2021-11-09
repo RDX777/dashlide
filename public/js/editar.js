@@ -1,8 +1,2 @@
-const getclick = document.getElementById("demostracao")
-
-getclick.addEventListener("click", (event) => {
-    if (event.target.tagName == 'I') {
-        const tr = document.getElementById(event.target.id)
-        tr.remove()
-    }
-})
+(()=>{var e,r={573:()=>{document.getElementById("demostracao").addEventListener("click",(function(e){"I"==e.target.tagName&&document.getElementById(e.target.id).remove()}))},394:()=>{}},t={};function o(e){var n=t[e];if(void 0!==n)return n.exports;var a=t[e]={exports:{}};return r[e](a,a.exports,o),a.exports}o.m=r,e=[],o.O=(r,t,n,a)=>{if(!t){var i=1/0;for(d=0;d<e.length;d++){for(var[t,n,a]=e[d],v=!0,l=0;l<t.length;l++)(!1&a||i>=a)&&Object.keys(o.O).every((e=>o.O[e](t[l])))?t.splice(l--,1):(v=!1,a<i&&(i=a));if(v){e.splice(d--,1);var c=n();void 0!==c&&(r=c)}}return r}a=a||0;for(var d=e.length;d>0&&e[d-1][2]>a;d--)e[d]=e[d-1];e[d]=[t,n,a]},o.o=(e,r)=>Object.prototype.hasOwnProperty.call(e,r),(()=>{var e={108:0,394:0};o.O.j=r=>0===e[r];var r=(r,t)=>{var n,a,[i,v,l]=t,c=0;if(i.some((r=>0!==e[r]))){for(n in v)o.o(v,n)&&(o.m[n]=v[n]);if(l)var d=l(o)}for(r&&r(t);c<i.length;c++)a=i[c],o.o(e,a)&&e[a]&&e[a][0](),e[i[c]]=0;return o.O(d)},t=self.webpackChunk=self.webpackChunk||[];t.forEach(r.bind(null,0)),t.push=r.bind(null,t.push.bind(t))})(),o.O(void 0,[394],(()=>o(573)));var n=o.O(void 0,[394],(()=>o(394)));n=o.O(n)})();
+//# sourceMappingURL=editar.js.map

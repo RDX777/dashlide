@@ -85,6 +85,6 @@
 
 </form>
 
-<script src="{{ asset('js/editar.js') }}"></script>
+<script src="{{ url(mix('js/editar.js')) }}"></script>
 
 @endsection

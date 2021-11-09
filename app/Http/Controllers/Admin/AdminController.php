@@ -88,6 +88,8 @@ class AdminController extends Controller
                 $arquivo->nome = $arquivos[$i]->getClientOriginalName();
                 $arquivo->extencao = $extencao;
                 $arquivo->mimetype = $mimeType;
+                $arquivo->data = date('Y-m-d');
+                $arquivo->hora = date('H:i:s');
                 $arquivo->tempo = $tempos[$i];
                 $arquivo->ordem = $ordens[$i];
                 $arquivo->esticar = $esticar[$i];

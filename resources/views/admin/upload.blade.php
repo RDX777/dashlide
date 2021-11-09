@@ -71,6 +71,6 @@
 
 </form>
 
-<script src="{{ asset('js/upload.js') }}"></script>
+<script src="{{ url(mix('js/upload.js')) }}"></script>
 
 @endsection

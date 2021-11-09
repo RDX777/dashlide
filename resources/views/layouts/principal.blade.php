@@ -66,6 +66,6 @@
 
     </form>
 
-    <script src="{{ asset('js/usuariosprincipal.js') }}"></script>
+    <script src="{{ url(mix('js/usuariosprincipal.js')) }}"></script>
 
 @endsection

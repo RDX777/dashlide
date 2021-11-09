@@ -1,4 +1,9 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/js/editar.js": "/js/editar.js?id=b39ad3506fe7ef11deb7",
+    "/js/home.js": "/js/home.js?id=b7196dc5dabc3b818eff",
+    "/js/upload.js": "/js/upload.js?id=9e17db8ea09a985e452e",
+    "/js/usuariosprincipal.js": "/js/usuariosprincipal.js?id=83f22c97e102650f1168",
+    "/js/bootstrap/bootstrap.js": "/js/bootstrap/bootstrap.js?id=f4bc423f137a23e89218",
+    "/css/bootstrap/bootstrap-icons.css": "/css/bootstrap/bootstrap-icons.css?id=f914791d56fe0bf3efd2",
+    "/css/bootstrap/bootstrap.css": "/css/bootstrap/bootstrap.css?id=a67b934edcdb7eb48fcd"
 }

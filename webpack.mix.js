@@ -11,8 +11,38 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css', 'public/css', [
-    require('postcss-import'),
-    require('tailwindcss'),
-    require('autoprefixer'),
-]);
+ mix.sass('node_modules/bootstrap-icons/font/bootstrap-icons.scss', 'public/css/bootstrap/')
+ .version()
+ .sourceMaps();
+
+
+mix
+    .js('resources/js/editar.js', 'public/js/editar.js')
+    .version();
+
+mix
+    .js('resources/js/home.js', 'public/js/home.js');
+
+mix
+    .js('resources/js/upload.js', 'public/js/upload.js')
+    .version();
+
+mix
+    .js('resources/js/usuariosprincipal.js', 'public/js/usuariosprincipal.js')
+    .version();
+
+mix
+    .js('node_modules/bootstrap/dist/js/bootstrap.bundle.js', 'public/js/bootstrap/bootstrap.js')
+    .version()
+    .sourceMaps();
+
+
+mix
+    .styles([
+        'node_modules/bootstrap/dist/css/bootstrap.css',
+        'resources/css/styles.css'
+        ], 'public/css/bootstrap/bootstrap.css')
+        .version()
+        .sourceMaps();
+
+

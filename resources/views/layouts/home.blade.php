@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="{{ url(mix('css/bootstrap/bootstrap.css')) }}">
+    <link rel="stylesheet" href="{{ url(mix('css/bootstrap/bootstrap-icons.css')) }}">
 
     <title>@yield('title')</title>
 
@@ -14,7 +14,7 @@
 
     @yield('content')
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url(mix('js/bootstrap/bootstrap.js')) }}"></script>
 
 </body>
 </html>

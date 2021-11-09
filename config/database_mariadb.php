@@ -52,15 +52,16 @@ return [
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8',
-            'collation' => 'utf8_unicode_ci',
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'prefix_indexes' => true,
             'strict' => true,
             'engine' => null,
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
-            ]) : [],
+            'options' => extension_loaded('pdo_mysql') ? [
+                PDO::MYSQL_ATTR_SSL_CA => 'C:/laragon-portable/etc/ssl/bd/CACertificado.pem',
+                PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false,
+            ] : [],
         ],
 
         'pgsql' => [
